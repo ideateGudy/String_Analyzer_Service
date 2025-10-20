@@ -8,7 +8,7 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsup src/index.ts --format esm --dts --out-dir dist",
     "serve": "node dist/index.js",
-    "test" : "tsup src/index.ts"
+    "test": "tsup src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "zod": "^4.1.12"
   }
 }

@@ -3,11 +3,6 @@ import { customApiError } from "./apiError.ts";
 
 export const parseQuery = (query: string): ParsedQuery => {
 
-
-    if(query.length > 1){
-        throw new customApiError("You can only parse one query at a time", 400);
-    }
-
   const lower = query.toLowerCase().trim();
   const filters: ParsedFilters = {};
 
